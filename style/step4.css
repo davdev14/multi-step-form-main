@@ -1,0 +1,97 @@
+@import url('/assets/fonts/Ubuntu-Regular.ttf');
+body {
+  margin: 0;
+  font-family: 'Ubuntu';
+  font-size: 16px;
+}
+header {
+  background: url("/assets/images/bg-sidebar-mobile.svg");
+  width: 100%;
+}
+nav {
+  height: 172px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+.steps {
+  border: 2px solid hsl(231, 11%, 63%);
+  color: #fff;
+  box-sizing: border-box;
+  padding: 13px 18px;
+  border-radius: 50%;
+  margin-top: 25px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.finishing-up-card {
+  border: 1px solid #fff;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 75%;
+  height: 275px;
+  position: absolute;
+  top: -69px;
+  z-index: 0;
+}
+.finishing-up-card h1 {
+  color: hsl(213, 96%, 18%);
+  font-weight: 700;
+  margin: 0;
+}
+.finishing-up-card p {
+  font-weight: 700;
+  color: hsl(231, 11%, 63%);
+  max-width: 279px;
+}
+.plan{
+  background: hsl(229, 24%, 87%);
+}
+.plan h4 {
+  color: hsl(213, 96%, 18%);
+  margin: 0;
+  font-weight: 700;
+}
+#choosed-plan-bill-mo {
+  margin-top: 16px;
+}
+
+.position-r-end {
+  margin: 0;
+  float: right;
+  padding: 0px 20px 0px 0;
+}
+main {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.next-step-btn {
+  color: #fff;
+  background-color: hsl(213, 96%, 18%);
+  border: 1px solid hsl(213, 96%, 18%);
+  border-radius: 5px;
+  padding: 8px 10px;
+  position: absolute;
+  bottom: -155px;
+  right: 35px;
+  cursor: pointer;
+}
+.go-back-link {
+  position: absolute;
+  bottom: -150px;
+  left: 35px;
+  text-decoration: none;
+  color: hsl(229, 24%, 87%);
+  font-weight: 700;
+}
+.active {
+  background-color: hsl(228, 100%, 84%);
+  border: 1px solid hsl(228, 100%, 84%);
+}
+h4{
+  color: hsl(213, 96%, 18%);
+}

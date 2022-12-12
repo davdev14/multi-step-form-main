@@ -1,0 +1,116 @@
+@import url('/assets/fonts/Ubuntu-Regular.ttf');
+body {
+  margin: 0;
+  font-family: 'Ubuntu';
+  font-size: 16px;
+}
+header {
+  background: url("/assets/images/bg-sidebar-mobile.svg");
+  width: 100%;
+}
+nav {
+  height: 172px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+.steps {
+  border: 2px solid hsl(231, 11%, 63%);
+  color: #fff;
+  box-sizing: border-box;
+  padding: 13px 18px;
+  border-radius: 50%;
+  margin-top: 25px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.plans-card {
+  border: 1px solid #fff;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 75%;
+  height: 275px;
+  position: absolute;
+  top: -69px;
+  z-index: 0;
+}
+.plans-card h1 {
+  color: hsl(213, 96%, 18%);
+  font-weight: 700;
+  margin: 0;
+}
+.plans-card p {
+  font-weight: 700;
+  color: hsl(231, 11%, 63%);
+  max-width: 279px;
+}
+.plan-box {
+  border: 1px solid black;
+  height: 60px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+  box-sizing: border-box;
+  padding: 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+.plan-box img {
+  height: 40px;
+}
+.plan-box h4 {
+  margin: 0 0 3px 0;
+}
+.plan-box p {
+  margin: 0;
+  font-size: 14px;
+}
+.plan-box:hover {
+  background-color: hsl(217, 100%, 97%);
+} 
+.billing-option {
+  background-color:hsl(217, 100%, 97%);
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+main {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.next-step-btn {
+  color: #fff;
+  background-color: hsl(213, 96%, 18%);
+  border: 1px solid hsl(213, 96%, 18%);
+  border-radius: 5px;
+  padding: 8px 10px;
+  position: absolute;
+  bottom: -155px;
+  right: 35px;
+  cursor: pointer;
+}
+.go-back-link {
+  position: absolute;
+  bottom: -150px;
+  left: 35px;
+  text-decoration: none;
+  color: hsl(229, 24%, 87%);
+  font-weight: 700;
+}
+.active {
+  background-color: hsl(228, 100%, 84%);
+  border: 1px solid hsl(228, 100%, 84%);
+}
+.active2 {
+  color: #000 !important;
+  text-decoration: underline;
+}

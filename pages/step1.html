@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Multi Step Form</title>
+<link rel="stylesheet" href="/style/step1.css">
+</head>
+<body>
+  <!-- this is the header that shows the different steps of the form -->
+  <header>
+    <nav>
+      <a href="/pages/step1.html" class="steps active">1</a>
+      <a href="/pages/step2.html" class="steps">2</a>
+      <a href="/pages/step3.html" class="steps">3</a>
+      <a href="/pages/step4.html" class="steps">4</a>
+    </nav>
+  </header>
+<!-- this is the main card to fill in the user's personal info -->
+  <main>
+    <div class="personal-info-card">
+
+      <h1>Personal Info</h1>
+      <p>
+        Please provide your name, email address, and phone number.
+      </p>
+      <form action="/pages/step2.html">
+        <div class="personal-info">
+          <label for="user-name">Name</label><br>
+          <input type="text" id="user-name" name="personal-info" placeholder="e.g. Stephen King" required>
+          <br>
+          <label for="user-email">Email Address</label><br>
+          <input type="email" id="user-email" name="personal-info" placeholder="e.g. stephenking@lorem.com" required>
+          <br>
+          <label for="user-phone-number">Phone Number</label><br>
+          <input type="number" id="user-phone-number"  name="personal-info" placeholder="e.g. +1 234 567 890" required>
+        </div>
+        <input type="submit" value="Next Step" class="next-step-btn">
+      </form>
+    </div>
+  </main>
+</body>
+</html>

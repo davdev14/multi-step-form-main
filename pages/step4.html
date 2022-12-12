@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Multi Step Form</title>
+<link rel="stylesheet" href="/style/step4.css">
+</head>
+<body>
+  <!-- this is the header that shows the different steps of the form -->
+  <header>
+    <nav>
+      <a href="/pages/step1.html" class="steps">1</a>
+      <a href="/pages/step2.html" class="steps">2</a>
+      <a href="/pages/step3.html" class="steps">3</a>
+      <a href="/pages/step4.html" class="steps active">4</a>
+    </nav>
+  </header>
+<!-- this is the main card to fill in the user's personal info -->
+  <main>
+    <div class="finishing-up-card">
+
+      <h1>Finishing up</h1>
+      <p>
+        Double check everything looks OK before confirming.
+      </p>
+      <form action="/pages/step5.html">
+        <div class="plan">
+          <h4 id="choosed-plan-mo">Arcard(Monthly)</h4>
+          <a href="/pages/step2.html">change</a>
+          <h4 id="choosed-plan-bill-mo">$9/mo</h4>
+          <hr>
+          <div id="add-ons-div">
+            <p>Add-ons(Monthly)</p>
+            <h4 id="add-ons-total">+$1/mo</h4>
+          </div>
+          <hr>
+        </div>
+        <div class="total-cal">
+          <p>total(per month)</p>
+          <h4 id="total">$12/month</h4>
+        </div>
+          <a href="/pages/step3.html" class="go-back-link">Go Back</a>
+          <input type="submit" value="Confirm" class="next-step-btn">
+      </form>
+    </div>
+  </main>
+  <script src="/script/scriptMo.js"></script>
+</body>
+</html>

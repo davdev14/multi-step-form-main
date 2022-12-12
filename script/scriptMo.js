@@ -79,10 +79,8 @@ function selectedMonthlyPlan(){
 
 savePlanValue = localStorage.getItem('savePlanValue')
 choosedPlan.textContent = `${savePlanValue}(Monthly)`
-console.log(choosedPlan);
 planBillStorageMo = JSON.parse(localStorage.getItem('planBillMo'))
 choosedPlanBillMo.textContent = `+$${planBillStorageMo}/mo`
-console.log(choosedPlanBillMo);
 
 // function to add monthly addons
 function pickAddOnsMonthly(){
@@ -107,5 +105,8 @@ function pickAddOnsMonthly(){
   addOnsBillStorageMo = localStorage.setItem('addOnsBillMo', addOnsBillMonthly)
 }
 
+addOnsBillStorageMo = JSON.parse(localStorage.getItem('addOnsBillMo'))
+addOnsTotal.textContent = `+$${addOnsBillStorageMo}/mo`
 
+total.textContent = `$${planBillStorageMo + addOnsBillStorageMo}(Per Month)`
 

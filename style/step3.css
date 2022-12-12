@@ -15,6 +15,9 @@ nav {
   align-items: flex-start;
   gap: 20px;
 }
+nav a {
+  pointer-events: none;
+}
 .steps {
   border: 2px solid hsl(231, 11%, 63%);
   color: #fff;

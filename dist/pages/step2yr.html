@@ -6,22 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Multi Step Form</title>
-<link rel="stylesheet" href="/style/step2.css">
+<link rel="stylesheet" href="/dist/style/step2.css">
 </head>
 <body>
   <!-- this is the header that shows the different steps of the form -->
   <header>
     <nav>
-      <a href="/pages/step1.html" class="steps">1</a>
-      <a href="/pages/step2.html" class="steps active">2</a>
-      <a href="/pages/step3.html" class="steps">3</a>
-      <a href="/pages/step4.html" class="steps">4</a>
+      <a href="/dist/pages/step1.html" class="steps">1</a>
+      <a href="/dist/pages/step2.html" class="steps active">2</a>
+      <a href="/dist/pages/step3.html" class="steps">3</a>
+      <a href="/dist/pages/step4.html" class="steps">4</a>
     </nav>
   </header>
 <!-- this is the main card to fill in the user's personal info -->
   <main>
     <div class="plans-card">
-      <form action="/pages/step3yr.html">
+      <form action="/dist/pages/step3yr.html">
         <h1>Select Your Plan</h1>
         <p>
           You have the option of monthly or yearly billing.
@@ -58,12 +58,12 @@
             <p id="monthly-billing" name="billing" required onclick="redirectMo()" style="cursor: pointer;">Monthly</p>
             <p id="yearly-billing" class="active2" name="billing" required onclick="redirectYr()" style="cursor: pointer;">Yearly</p>
           </div>
-            <a href="/pages/step1.html" class="go-back-link">Go Back</a>
+            <a href="/dist/pages/step1.html" class="go-back-link">Go Back</a>
             <input type="submit" value="Next Step" class="next-step-btn" id="confirm-plan-btn" onclick="selectedYearlyPlan()">
       </form>
     </div>
   </main>
-  <script src="/script/scriptYr.js"></script>
+  <script src="/dist/script/scriptYr.js"></script>
   <script>
   arcadePlan.addEventListener("click", () => {
   checkRadio1.checked=true

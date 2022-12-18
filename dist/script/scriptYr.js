@@ -38,10 +38,10 @@ let addOnsBillYearly = 0
 let addOnsBillStorageYr = 0
 
 function redirectYr(){
-  window.location.href = "/pages/step2yr.html";
+  window.location.href = "/dist/pages/step2yr.html";
 }
 function redirectMo(){
-  window.location.href = "/pages/step2.html";
+  window.location.href = "/dist/pages/step2.html";
 }
 
 
